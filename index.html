@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="RoboMaster 飞镖兵种 — xxx大学飞镖研发团队">
-  <title>飞镖兵种 — xxx大学 RoboMaster</title>
+  <meta name="description" content="RoboMaster 飞镖兵种 — 合肥工业大学飞镖研发团队">
+  <title>飞镖兵种 — 合肥工业大学 RoboMaster</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/variables.css">
@@ -53,7 +53,7 @@
         <p class="hero__tag reveal">RoboMaster · 飞镖兵种</p>
         <h1 class="hero__title reveal reveal-delay-1">精准 · 稳定 · 一击必中</h1>
         <p class="hero__subtitle reveal reveal-delay-2">
-          xxx大学飞镖研发团队<br>
+          合肥工业大学飞镖研发团队<br>
           致力于飞镖兵种的技术突破与迭代创新
         </p>
         <div class="hero__actions reveal reveal-delay-3">
@@ -128,7 +128,7 @@
               <div class="card">
                 <h3 class="card__title">🚀 发射方式对比</h3>
                 <!-- TODO: 替换为真实内容 -->
-                <p>常见发射方式包括摩擦轮发射和气动发射。摩擦轮结构简单、响应快但精度受转速影响；气动发射力量大、初速高但需气源支持，系统相对复杂。</p>
+                <p>常见发射方式包括摩擦轮发射、气动发射和高分子皮筋弹射。摩擦轮结构简单但精度受转速影响；气动发射力量大但需气源支持；高分子皮筋弹射重量轻、响应迅速、维护方便，是我们采用的方案。</p>
               </div>
               <div class="card">
                 <h3 class="card__title">📐 弹道计算</h3>
@@ -155,25 +155,25 @@
                 <h3 class="card__title">📖 官方规则手册</h3>
                 <!-- TODO: 替换为真实链接 -->
                 <p>RoboMaster 官方每年发布最新版比赛规则手册，包含完整的技术规范、判罚标准和比赛流程。</p>
-                <a href="#" class="card__link" target="_blank" rel="noopener">查看官方文档 →</a>
+                <a href="https://bbs.robomaster.com/wiki/20204847/809871?source=7" class="card__link" target="_blank" rel="noopener">查看官方文档 →</a>
               </div>
               <div class="card">
                 <h3 class="card__title">💬 技术论坛</h3>
                 <!-- TODO: 替换为真实链接 -->
                 <p>RoboMaster 官方论坛是各参赛队交流技术的主要平台，飞镖板块有大量开源方案和讨论。</p>
-                <a href="#" class="card__link" target="_blank" rel="noopener">访问论坛 →</a>
+                <a href="https://bbs.robomaster.com/" class="card__link" target="_blank" rel="noopener">访问论坛 →</a>
               </div>
               <div class="card">
                 <h3 class="card__title">📚 开源项目</h3>
                 <!-- TODO: 替换为真实链接 -->
                 <p>各高校开源飞镖方案汇总，涵盖机械设计、电路原理图、视觉算法等，是学习和借鉴的宝贵资源。</p>
-                <a href="#" class="card__link" target="_blank" rel="noopener">查看开源仓库 →</a>
+                <a href="resources-open-source.html" class="card__link">查看开源仓库 →</a>
               </div>
               <div class="card">
                 <h3 class="card__title">🎓 学术论文</h3>
                 <!-- TODO: 替换为真实链接 -->
                 <p>飞镖相关技术领域（弹道、自瞄、机构设计等）的学术论文与专利，提供理论基础和创新思路。</p>
-                <a href="#" class="card__link" target="_blank" rel="noopener">搜索论文 →</a>
+                <a href="resources-papers.html" class="card__link">查看论文汇总 →</a>
               </div>
             </div>
           </div>
@@ -234,13 +234,13 @@
                 <table class="param-table">
                   <caption>关键参数总览</caption>
                   <tbody>
-                    <tr><th>发射方式</th><td>摩擦轮发射</td></tr>
-                    <tr><th>射程</th><td>约 X 米</td></tr>
-                    <tr><th>射频</th><td>X 发/分钟</td></tr>
-                    <tr><th>弹仓容量</th><td>X 发</td></tr>
-                    <tr><th>自瞄精度</th><td>±X cm @ Y 米</td></tr>
-                    <tr><th>系统总重</th><td>X kg</td></tr>
-                    <tr><th>主控芯片</th><td>STM32F4xx / 待补充</td></tr>
+                    <tr><th>发射方式</th><td>高分子皮筋弹射</td></tr>
+                    <tr><th>射程</th><td>约 25 米</td></tr>
+                    <tr><th>射频</th><td>5 发/分钟</td></tr>
+                    <tr><th>弹仓容量</th><td>4 发</td></tr>
+                    <tr><th>自瞄精度</th><td>±10000000000000 cm @ Y 米</td></tr>
+                    <tr><th>系统总重</th><td>25 kg</td></tr>
+                    <tr><th>主控芯片</th><td>STM32H7 / 待补充</td></tr>
                     <tr><th>通信方式</th><td>CAN + UART</td></tr>
                   </tbody>
                 </table>
@@ -302,7 +302,7 @@
                 <!-- TODO: 替换为真实内容 -->
                 <p>
                   底盘电机由 CAN 总线驱动器控制，云台电机由专用伺服驱动器控制。
-                  发射机构摩擦轮由独立 PWM 驱动，可通过调节占空比改变轮速。
+                  发射机构由舵机控制皮筋释放，通过调节张紧程度改变弹射力度。
                 </p>
                 <h3>传感器</h3>
                 <!-- TODO: 替换为真实内容 -->
@@ -373,21 +373,23 @@
                 <h3>发射方式</h3>
                 <!-- TODO: 替换为真实内容 -->
                 <p>
-                  采用摩擦轮发射方案，两个高速旋转的摩擦轮夹持飞镖，
-                  通过摩擦力将飞镖加速射出。摩擦轮转速可调，以控制飞镖初速。
+                  采用高分子皮筋弹射方案，利用高分子材料皮筋的弹性势能作为动力来源。
+                  发射时释放预拉伸的皮筋，将弹性势能瞬间转化为飞镖动能，
+                  实现高速弹射。相比摩擦轮方案，皮筋弹射结构更轻、耗电更低、
+                  维护更简单。
                 </p>
-                <h3>摩擦轮系统</h3>
+                <h3>皮筋系统</h3>
                 <!-- TODO: 替换为真实内容 -->
                 <p>
-                  摩擦轮材质选用高摩擦系数材料，确保与飞镖之间有足够的摩擦力。
-                  轮间距可微调，以适应不同飞镖直径。电机选用高转速无刷电机，
-                  通过 PID 控制器实现精确转速闭环控制。
+                  皮筋选用高强度高分子材料（如乳胶/聚氨酯），具有优异的弹性和耐久性。
+                  皮筋拉伸长度和截面积决定弹射力度，通过调节拉伸行程可精确控制飞镖初速。
+                  多根皮筋可并联使用，以提供更大的弹射力量。
                 </p>
                 <h3>拨弹机构</h3>
                 <!-- TODO: 替换为真实内容 -->
                 <p>
-                  拨弹机构由拨轮+舵机/电机组成，每触发一次拨入一发飞镖。
-                  拨弹节奏由主控精确控制，与摩擦轮转速协同，保证每次发射的初速一致性。
+                  拨弹机构由拨轮+舵机组成，每触发一次拨入一发飞镖至发射位。
+                  拨弹节奏由主控精确控制，与皮筋释放时机协同，保证每次发射的初速一致性。
                 </p>
                 <h3>射频控制</h3>
                 <!-- TODO: 替换为真实内容 -->
@@ -435,7 +437,7 @@
           <span>飞镖兵种</span>
         </div>
         <p class="footer__info">
-          xxx大学 · RoboMaster 飞镖研发团队
+          合肥工业大学 · RoboMaster 飞镖研发团队
         </p>
         <p class="footer__copy">
           &copy; 2026 RoboMaster Dart Team. Built with HTML + CSS + JS.

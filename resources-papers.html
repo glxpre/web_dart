@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RoboMaster 飞镖兵种 — 学术论文汇总">
+  <title>学术论文 — 飞镖兵种</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">跳到主内容</a>
+
+  <!-- 导航栏 -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">🎯</span>
+        <span class="nav__logo-text">飞镖兵种</span>
+      </a>
+      <button class="nav__hamburger" aria-label="菜单" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="index.html#info" class="nav__link">资料汇总</a></li>
+          <li><a href="index.html#system" class="nav__link">飞镖系统</a></li>
+          <li><a href="index.html#members" class="nav__link">队员风采</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 页面标题 -->
+    <section class="page-hero">
+      <div class="container">
+        <a href="index.html#info" class="back-link">← 返回资料汇总</a>
+        <h1 class="page-hero__title">🎓 学术论文</h1>
+        <p class="page-hero__subtitle">
+          飞镖相关技术领域的学术论文与专利，涵盖弹道计算、目标识别、机构优化等方向。
+        </p>
+      </div>
+    </section>
+
+    <!-- 资源列表 -->
+    <section class="section">
+      <div class="container content-prose">
+        <div class="resource-list">
+
+          <!-- ====== 示例 1：带链接的论文 ====== -->
+          <div class="resource-item">
+            <h3 class="resource-item__title">
+              <a href="#" target="_blank" rel="noopener">示例：基于视觉的飞镖自动瞄准系统研究</a>
+            </h3>
+            <p class="resource-item__desc">提出了一种结合深度学习与传统图像处理的装甲板识别方法，在复杂光照条件下仍能保持较高检测精度。</p>
+            <div class="resource-item__meta">
+              <span class="resource-tag">视觉</span>
+              <span class="resource-tag">深度学习</span>
+              <span class="resource-tag">目标检测</span>
+            </div>
+          </div>
+
+          <!-- ====== 示例 2：带 PDF 附件的论文 ====== -->
+          <div class="resource-item">
+            <h3 class="resource-item__title">示例：飞镖弹道建模与落点预测</h3>
+            <p class="resource-item__desc">建立了考虑空气阻力和重力的飞镖弹道数学模型，并通过实测数据对比验证了模型的准确性。</p>
+            <div class="resource-item__meta">
+              <span class="resource-tag">弹道</span>
+              <span class="resource-tag">建模</span>
+            </div>
+            <div class="resource-item__files">
+              <span class="file-label">📎 附件：</span>
+              <a href="#" class="file-link" download>ballistic_modeling.pdf</a>
+              <a href="#" class="file-link" download>experimental_data.xlsx</a>
+            </div>
+          </div>
+
+          <!-- TODO: 在这里继续添加更多论文 -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__icon">🎯</span>
+        <span>飞镖兵种</span>
+      </div>
+      <p class="footer__info">合肥工业大学 · RoboMaster 飞镖研发团队</p>
+      <p class="footer__copy">&copy; 2026 RoboMaster Dart Team.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>

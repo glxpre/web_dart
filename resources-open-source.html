@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RoboMaster 飞镖兵种 — 开源项目汇总">
+  <title>开源项目 — 飞镖兵种</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">跳到主内容</a>
+
+  <!-- 导航栏（与主页一致） -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">🎯</span>
+        <span class="nav__logo-text">飞镖兵种</span>
+      </a>
+      <button class="nav__hamburger" aria-label="菜单" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="index.html#info" class="nav__link">资料汇总</a></li>
+          <li><a href="index.html#system" class="nav__link">飞镖系统</a></li>
+          <li><a href="index.html#members" class="nav__link">队员风采</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 页面标题 -->
+    <section class="page-hero">
+      <div class="container">
+        <a href="index.html#info" class="back-link">← 返回资料汇总</a>
+        <h1 class="page-hero__title">📚 开源项目</h1>
+        <p class="page-hero__subtitle">
+          各高校开源的飞镖相关方案汇总，涵盖机械设计、电路原理、视觉算法等方向。
+        </p>
+      </div>
+    </section>
+
+    <!-- 资源列表 -->
+    <section class="section">
+      <div class="container content-prose">
+        <div class="resource-list">
+
+          <!-- 每条资源一个 resource-item，复制这段来新增 -->
+          <!-- ====== 示例 1：带链接的项目 ====== -->
+          <div class="resource-item">
+            <h3 class="resource-item__title">
+              <a href="#" target="_blank" rel="noopener">示例：XX大学飞镖开源方案</a>
+            </h3>
+            <p class="resource-item__desc">机械结构、电路原理图、视觉算法全套开源，包含 SolidWorks 图纸和 STM32 源码。</p>
+            <div class="resource-item__meta">
+              <span class="resource-tag">机械设计</span>
+              <span class="resource-tag">电控</span>
+              <span class="resource-tag">视觉</span>
+            </div>
+          </div>
+
+          <!-- ====== 示例 2：带文件下载的项目 ====== -->
+          <div class="resource-item">
+            <h3 class="resource-item__title">示例：飞镖弹道计算工具</h3>
+            <p class="resource-item__desc">基于 Python 的飞镖弹道仿真工具，可计算不同初速和角度下的弹道轨迹。</p>
+            <div class="resource-item__meta">
+              <span class="resource-tag">软件工具</span>
+              <span class="resource-tag">弹道</span>
+            </div>
+            <div class="resource-item__files">
+              <span class="file-label">📎 附件：</span>
+              <a href="#" class="file-link" download>trajectory_sim.zip</a>
+            </div>
+          </div>
+
+          <!-- TODO: 在这里继续添加更多开源项目 -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__icon">🎯</span>
+        <span>飞镖兵种</span>
+      </div>
+      <p class="footer__info">合肥工业大学 · RoboMaster 飞镖研发团队</p>
+      <p class="footer__copy">&copy; 2026 RoboMaster Dart Team.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>
