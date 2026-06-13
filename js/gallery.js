@@ -7,66 +7,28 @@
   'use strict';
 
   /* ────────────────────────────────────────────────
-     队员数据（TODO: 替换为真实队员信息）
-     photo 支持外部图片路径或空字符串（空则显示首字母头像）
+     队员数据
+     - photo: images/members/ 下的文件名或外部 URL（空字符串显示首字母头像）
+     - 添加新队员：在对应赛季的数组中新增一条记录即可
+     - TODO: 补充更多队员信息（姓名、职责、赛季、座右铭、照片）
      ──────────────────────────────────────────────── */
   var members = [
+    // ====== 2025-2026 赛季 ======
     {
-      name: '张三',
+      name: '丁瑞',
       role: '机械结构',
-      season: '2025 赛季',
-      photo: '',
+      season: '2025-2026 赛季',
+      photo: 'images/members/ding-rui.jpg',
       quote: '精益求精，造最稳的发射架。'
     },
     {
-      name: '李四',
-      role: '电控算法',
-      season: '2025 赛季',
-      photo: '',
-      quote: '代码即武器，算法定乾坤。'
-    },
-    {
-      name: '王五',
-      role: '视觉识别',
-      season: '2025 赛季',
-      photo: '',
+      name: '王泽惠',
+      role: '电控',
+      season: '2025-2026 赛季',
+      photo: 'images/members/wang-zehui.png',
       quote: '让每一发都精准命中。'
-    },
-    {
-      name: '赵六',
-      role: '项目管理',
-      season: '2025 赛季',
-      photo: '',
-      quote: '统筹全局，稳扎稳打。'
-    },
-    {
-      name: '陈七',
-      role: '机械结构',
-      season: '2024 赛季',
-      photo: '',
-      quote: '结构决定性能。'
-    },
-    {
-      name: '刘八',
-      role: '电控算法',
-      season: '2024 赛季',
-      photo: '',
-      quote: '不断迭代，追求极致。'
-    },
-    {
-      name: '孙九',
-      role: '视觉识别',
-      season: '2024 赛季',
-      photo: '',
-      quote: '视觉是飞镖的眼睛。'
-    },
-    {
-      name: '周十',
-      role: '项目管理',
-      season: '2024 赛季',
-      photo: '',
-      quote: '传承与突破。'
     }
+    // TODO: 继续添加更多队员...
   ];
 
   /* ── 渲染照片墙 ── */
@@ -116,7 +78,8 @@
         '<p class="member-card__quote">"' + m.quote + '"</p>';
 
       card.addEventListener('click', function () {
-        openLightbox(memberIndex);
+        var idx = parseInt(this.getAttribute('data-index'), 10);
+        openLightbox(idx);
       });
 
       grid.appendChild(card);
@@ -137,6 +100,13 @@
     if (m.photo) {
       lightboxImg.src = m.photo;
       lightboxImg.alt = m.name;
+      lightboxImg.style.display = '';
+      // 隐藏无照片占位符
+      var wrapper = lightbox.querySelector('.lightbox__image-wrapper');
+      var placeholder = wrapper.querySelector('.lightbox__placeholder');
+      if (placeholder) {
+        placeholder.style.display = 'none';
+      }
     } else {
       // 无照片：显示占位
       lightboxImg.src = '';

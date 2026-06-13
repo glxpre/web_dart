@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (for local dev server)
+__pycache__/
+*.pyc
+
+# Node (if used for dev server)
+node_modules/
+
+# 原始素材（已处理的源文件）
+队员/
+
+# 项目文档（非网页文件）
+CLAUDE.md
