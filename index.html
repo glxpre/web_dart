@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RoboMaster 飞镖兵种 — xxx大学飞镖研发团队">
+  <title>飞镖兵种 — xxx大学 RoboMaster</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 跳过导航（无障碍） -->
+  <a href="#main-content" class="skip-link">跳到主内容</a>
+
+  <!-- =========================================================
+       Section 1: 导航栏
+       ========================================================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">🎯</span>
+        <span class="nav__logo-text">飞镖兵种</span>
+      </a>
+      <button class="nav__hamburger" aria-label="菜单" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#info" class="nav__link">资料汇总</a></li>
+          <li><a href="#system" class="nav__link">飞镖系统</a></li>
+          <li><a href="#members" class="nav__link">队员风采</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       Main Content
+       ========================================================= -->
+  <main id="main-content">
+
+    <!-- =========================================================
+         Section 2: Hero 首屏
+         ========================================================= -->
+    <section class="hero" id="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content container">
+        <p class="hero__tag reveal">RoboMaster · 飞镖兵种</p>
+        <h1 class="hero__title reveal reveal-delay-1">精准 · 稳定 · 一击必中</h1>
+        <p class="hero__subtitle reveal reveal-delay-2">
+          xxx大学飞镖研发团队<br>
+          致力于飞镖兵种的技术突破与迭代创新
+        </p>
+        <div class="hero__actions reveal reveal-delay-3">
+          <a href="#system" class="btn btn--primary">了解飞镖系统</a>
+          <a href="#members" class="btn btn--outline">认识队员</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>向下滚动</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l5 5 5-5"/>
+          <path d="M12 6v12"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         Section 3: 飞镖资料汇总
+         ========================================================= -->
+    <section class="section" id="info">
+      <div class="container">
+        <p class="section__label reveal">Information</p>
+        <h2 class="section__title reveal">飞镖资料汇总</h2>
+        <p class="section__subtitle reveal">
+          整理 RoboMaster 飞镖兵种相关规则、技术要点与参考资料，帮助新队员快速上手。
+        </p>
+
+        <!-- 标签页按钮 -->
+        <div class="tabs reveal" role="tablist">
+          <button class="tabs__btn tabs__btn--active" role="tab" data-tab="rules" aria-selected="true">
+            比赛规则
+          </button>
+          <button class="tabs__btn" role="tab" data-tab="tech" aria-selected="false">
+            技术要点
+          </button>
+          <button class="tabs__btn" role="tab" data-tab="refs" aria-selected="false">
+            参考资料
+          </button>
+        </div>
+
+        <!-- 标签页内容 -->
+        <div class="tab-content reveal">
+          <!-- 比赛规则 -->
+          <div class="tab-pane tab-pane--active" id="tab-rules" role="tabpanel">
+            <div class="card-grid">
+              <div class="card">
+                <h3 class="card__title">🏟️ 场地说明</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>飞镖发射区位于场地特定区域，飞镖需飞越隔离区击中对方前哨站或基地。场地设有发射区标识线，机器人必须在指定区域内完成发射。</p>
+              </div>
+              <div class="card">
+                <h3 class="card__title">🎯 得分机制</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>飞镖击中前哨站可获得相应积分，击中基地可获得更高积分。比赛不同阶段得分倍率不同，需根据战术合理安排发射时机。</p>
+              </div>
+              <div class="card">
+                <h3 class="card__title">📋 技术规范</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>飞镖尺寸、重量有严格限制。发射机构需满足安全规范，不得使用火药等危险推进方式。赛前需通过官方技术检录。</p>
+              </div>
+              <div class="card">
+                <h3 class="card__title">⚖️ 判罚标准</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>违规发射将受到判罚，包括但不限于：越界发射、超时发射、飞镖不合规等。具体判罚细则请参阅最新版比赛规则手册。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 技术要点 -->
+          <div class="tab-pane" id="tab-tech" role="tabpanel">
+            <div class="card-grid">
+              <div class="card">
+                <h3 class="card__title">🚀 发射方式对比</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>常见发射方式包括摩擦轮发射和气动发射。摩擦轮结构简单、响应快但精度受转速影响；气动发射力量大、初速高但需气源支持，系统相对复杂。</p>
+              </div>
+              <div class="card">
+                <h3 class="card__title">📐 弹道计算</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>飞镖飞行轨迹受重力、空气阻力影响，需建立弹道模型进行落点预测。常用方法包括物理建模+参数拟合，以及基于实测数据的查表法。</p>
+              </div>
+              <div class="card">
+                <h3 class="card__title">👁️ 目标识别</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>视觉系统需识别前哨站装甲板位置，解算目标在三维空间中的坐标。常见方案包括 OpenCV 传统视觉处理 + PnP 解算，以及深度学习目标检测。</p>
+              </div>
+              <div class="card">
+                <h3 class="card__title">🔧 供弹机构</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>供弹机构需保证飞镖的稳定供给与快速装填。常见方案有转盘式、弹链式和拨轮式，各有优劣，需根据整体结构空间和射速需求选择。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 参考资料 -->
+          <div class="tab-pane" id="tab-refs" role="tabpanel">
+            <div class="card-grid">
+              <div class="card">
+                <h3 class="card__title">📖 官方规则手册</h3>
+                <!-- TODO: 替换为真实链接 -->
+                <p>RoboMaster 官方每年发布最新版比赛规则手册，包含完整的技术规范、判罚标准和比赛流程。</p>
+                <a href="#" class="card__link" target="_blank" rel="noopener">查看官方文档 →</a>
+              </div>
+              <div class="card">
+                <h3 class="card__title">💬 技术论坛</h3>
+                <!-- TODO: 替换为真实链接 -->
+                <p>RoboMaster 官方论坛是各参赛队交流技术的主要平台，飞镖板块有大量开源方案和讨论。</p>
+                <a href="#" class="card__link" target="_blank" rel="noopener">访问论坛 →</a>
+              </div>
+              <div class="card">
+                <h3 class="card__title">📚 开源项目</h3>
+                <!-- TODO: 替换为真实链接 -->
+                <p>各高校开源飞镖方案汇总，涵盖机械设计、电路原理图、视觉算法等，是学习和借鉴的宝贵资源。</p>
+                <a href="#" class="card__link" target="_blank" rel="noopener">查看开源仓库 →</a>
+              </div>
+              <div class="card">
+                <h3 class="card__title">🎓 学术论文</h3>
+                <!-- TODO: 替换为真实链接 -->
+                <p>飞镖相关技术领域（弹道、自瞄、机构设计等）的学术论文与专利，提供理论基础和创新思路。</p>
+                <a href="#" class="card__link" target="_blank" rel="noopener">搜索论文 →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         Section 4: 飞镖系统说明
+         ========================================================= -->
+    <section class="section section--alt" id="system">
+      <div class="container">
+        <p class="section__label reveal">Our System</p>
+        <h2 class="section__title reveal">飞镖系统说明</h2>
+        <p class="section__subtitle reveal">
+          本队飞镖系统的全方位技术介绍，涵盖机械、电路、软件、发射等各个子系统。
+        </p>
+
+        <!-- 标签页按钮 -->
+        <div class="tabs reveal" role="tablist">
+          <button class="tabs__btn tabs__btn--active" role="tab" data-tab="overview" aria-selected="true">
+            整体设计
+          </button>
+          <button class="tabs__btn" role="tab" data-tab="mechanical" aria-selected="false">
+            机械结构
+          </button>
+          <button class="tabs__btn" role="tab" data-tab="electrical" aria-selected="false">
+            电路系统
+          </button>
+          <button class="tabs__btn" role="tab" data-tab="software" aria-selected="false">
+            软件/视觉
+          </button>
+          <button class="tabs__btn" role="tab" data-tab="launcher" aria-selected="false">
+            发射机构
+          </button>
+        </div>
+
+        <!-- 标签页内容 -->
+        <div class="tab-content reveal">
+          <!-- 整体设计 -->
+          <div class="tab-pane tab-pane--active" id="tab-overview" role="tabpanel">
+            <div class="system-layout">
+              <div class="system-text">
+                <h3>设计理念</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  本队飞镖系统以"高精度、高可靠性"为核心理念，采用模块化设计思路，
+                  将系统拆分为机械、电路、软件三个相对独立的子系统，便于并行开发与快速迭代。
+                  全系统通过 CAN 总线互联，实现实时数据交换与协同控制。
+                </p>
+                <h3>整体架构</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  系统由以下几个核心模块组成：底盘运动平台、供弹机构、发射架（云台）、
+                  视觉瞄准单元、主控计算单元。各模块通过标准接口连接，模块内部可独立升级。
+                </p>
+                <!-- TODO: 替换为真实参数 -->
+                <table class="param-table">
+                  <caption>关键参数总览</caption>
+                  <tbody>
+                    <tr><th>发射方式</th><td>摩擦轮发射</td></tr>
+                    <tr><th>射程</th><td>约 X 米</td></tr>
+                    <tr><th>射频</th><td>X 发/分钟</td></tr>
+                    <tr><th>弹仓容量</th><td>X 发</td></tr>
+                    <tr><th>自瞄精度</th><td>±X cm @ Y 米</td></tr>
+                    <tr><th>系统总重</th><td>X kg</td></tr>
+                    <tr><th>主控芯片</th><td>STM32F4xx / 待补充</td></tr>
+                    <tr><th>通信方式</th><td>CAN + UART</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="system-image">
+                <!-- TODO: 替换为整体架构图 -->
+                <div class="image-placeholder">
+                  <span>整体架构图</span>
+                  <span class="image-placeholder__hint">（待替换为真实图片）</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 机械结构 -->
+          <div class="tab-pane" id="tab-mechanical" role="tabpanel">
+            <div class="system-layout">
+              <div class="system-text">
+                <h3>底盘设计</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  底盘采用XX结构，使用麦克纳姆轮全向移动方案，确保飞镖发射时平台的稳定性。
+                  底盘框架使用碳纤维/铝合金材料，兼顾强度与轻量化。
+                </p>
+                <h3>云台与发射架</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  云台提供俯仰（Pitch）和偏航（Yaw）两个自由度，由无刷电机/舵机驱动。
+                  发射架与云台刚性连接，保证发射方向与瞄准方向一致。
+                </p>
+                <h3>供弹机构</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  供弹机构采用转盘式/弹链式设计，由独立电机驱动拨弹轮，
+                  保证每次只有一发飞镖进入发射位，防止卡弹与连发。
+                </p>
+              </div>
+              <div class="system-image">
+                <!-- TODO: 替换为机械结构图 -->
+                <div class="image-placeholder">
+                  <span>机械结构图</span>
+                  <span class="image-placeholder__hint">（待替换为真实图片）</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 电路系统 -->
+          <div class="tab-pane" id="tab-electrical" role="tabpanel">
+            <div class="system-layout">
+              <div class="system-text">
+                <h3>主控板</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  主控采用 STM32F4 系列 MCU，负责传感器数据融合、运动控制、
+                  发射逻辑和与上位机的通信。主频 X MHz，具备丰富的外设接口。
+                </p>
+                <h3>驱动板</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  底盘电机由 CAN 总线驱动器控制，云台电机由专用伺服驱动器控制。
+                  发射机构摩擦轮由独立 PWM 驱动，可通过调节占空比改变轮速。
+                </p>
+                <h3>传感器</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  配备 IMU（陀螺仪+加速度计）用于姿态感知，编码器用于轮速反馈，
+                  激光测距/红外传感器用于目标距离辅助测量。
+                </p>
+                <h3>供电方案</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  使用 24V 航模电池供电，通过 DC-DC 降压模块输出不同电压
+                  （12V/5V/3.3V）供给各子系统。关键回路设有独立保险丝。
+                </p>
+              </div>
+              <div class="system-image">
+                <!-- TODO: 替换为电路图 -->
+                <div class="image-placeholder">
+                  <span>电路系统图</span>
+                  <span class="image-placeholder__hint">（待替换为真实图片）</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 软件/视觉 -->
+          <div class="tab-pane" id="tab-software" role="tabpanel">
+            <div class="system-layout">
+              <div class="system-text">
+                <h3>自瞄算法</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  视觉模块使用 USB 工业相机采集图像，通过 OpenCV 进行图像预处理、
+                  目标检测与装甲板识别。结合 PnP 算法解算目标在相机坐标系中的三维位置。
+                </p>
+                <h3>弹道解算</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  根据目标位置、飞镖初速、重力加速度等参数，通过弹道模型计算发射角度。
+                  考虑空气阻力的影响，使用迭代法或查表法快速求解。
+                </p>
+                <h3>通信协议</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  上下位机之间通过串口进行高速数据交换，使用自定义协议，
+                  包含目标坐标、系统状态、发射指令等关键信息。带有 CRC 校验确保数据完整。
+                </p>
+                <h3>调试工具</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  开发了配套的上位机调试软件，可实时显示视觉画面、目标位置、
+                  弹道轨迹预览、系统日志等，方便现场调试与参数优化。
+                </p>
+              </div>
+              <div class="system-image">
+                <!-- TODO: 替换为软件架构图 -->
+                <div class="image-placeholder">
+                  <span>软件架构图</span>
+                  <span class="image-placeholder__hint">（待替换为真实图片）</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 发射机构 -->
+          <div class="tab-pane" id="tab-launcher" role="tabpanel">
+            <div class="system-layout">
+              <div class="system-text">
+                <h3>发射方式</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  采用摩擦轮发射方案，两个高速旋转的摩擦轮夹持飞镖，
+                  通过摩擦力将飞镖加速射出。摩擦轮转速可调，以控制飞镖初速。
+                </p>
+                <h3>摩擦轮系统</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  摩擦轮材质选用高摩擦系数材料，确保与飞镖之间有足够的摩擦力。
+                  轮间距可微调，以适应不同飞镖直径。电机选用高转速无刷电机，
+                  通过 PID 控制器实现精确转速闭环控制。
+                </p>
+                <h3>拨弹机构</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  拨弹机构由拨轮+舵机/电机组成，每触发一次拨入一发飞镖。
+                  拨弹节奏由主控精确控制，与摩擦轮转速协同，保证每次发射的初速一致性。
+                </p>
+                <h3>射频控制</h3>
+                <!-- TODO: 替换为真实内容 -->
+                <p>
+                  发射频率由比赛策略决定，系统支持单发和连发模式。
+                  连发模式下通过定时器精确控制发射间隔，最高可达 X 发/分钟。
+                </p>
+              </div>
+              <div class="system-image">
+                <!-- TODO: 替换为发射机构图 -->
+                <div class="image-placeholder">
+                  <span>发射机构图</span>
+                  <span class="image-placeholder__hint">（待替换为真实图片）</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         Section 5: 队员风采（照片墙）
+         ========================================================= -->
+    <section class="section" id="members">
+      <div class="container">
+        <p class="section__label reveal">Team</p>
+        <h2 class="section__title reveal">队员风采</h2>
+        <p class="section__subtitle reveal">
+          历届飞镖兵种队员，共同铸就飞镖的辉煌。
+        </p>
+
+        <!-- 队员照片墙由 JS 动态生成 -->
+        <div id="members-grid" class="members-grid"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         Section 6: 页脚
+         ========================================================= -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__icon">🎯</span>
+          <span>飞镖兵种</span>
+        </div>
+        <p class="footer__info">
+          xxx大学 · RoboMaster 飞镖研发团队
+        </p>
+        <p class="footer__copy">
+          &copy; 2026 RoboMaster Dart Team. Built with HTML + CSS + JS.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- 灯箱（照片墙弹出层） -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__overlay"></div>
+    <div class="lightbox__content">
+      <button class="lightbox__close" aria-label="关闭">✕</button>
+      <button class="lightbox__prev" aria-label="上一张">‹</button>
+      <button class="lightbox__next" aria-label="下一张">›</button>
+      <div class="lightbox__image-wrapper">
+        <img src="" alt="" class="lightbox__image" id="lightbox-img">
+      </div>
+      <div class="lightbox__info" id="lightbox-info"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/gallery.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
